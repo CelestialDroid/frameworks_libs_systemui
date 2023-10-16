@@ -124,6 +124,9 @@ public class Interpolators {
     public static final Interpolator FAST_OUT_LINEAR_IN = LEGACY_ACCELERATE;
     public static final Interpolator LINEAR_OUT_SLOW_IN = LEGACY_DECELERATE;
 
+    public static final Interpolator SLOWDOWN =
+            new PathInterpolator(0.5f, 1f, 0.5f, 1f);
+
     /**
      * Like {@link #FAST_OUT_SLOW_IN}, but used in case the animation is played in reverse (i.e. t
      * goes from 1 to 0 instead of 0 to 1).
